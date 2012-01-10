@@ -1,5 +1,6 @@
 #PROMPT='%{$fg[magenta]%}%n%\@%m%{$reset_color%}:$(git_prompt_info)%{$fg[green]%}%~ %{$fg_bold[red]%}➜ %{$reset_color%} '
-PROMPT='$(status_color)➜  %{$fg[green]%}%~$(git_prompt)%{$reset_color%} '
+#PROMPT='$(status_color)➜  %{$fg[green]%}%~$(git_prompt)%{$reset_color%} '
+PROMPT='$(status_color)> %{$fg[green]%}%~$(git_prompt)%{$reset_color%} '
 
 git_prompt () {
     if ! git rev-parse --git-dir > /dev/null 2>&1; then
